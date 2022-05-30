@@ -1,7 +1,33 @@
 body {
     margin: 0;
     text-align: center;
-    font-family: "Josefin Slab", serif;
-    font-weight: bolder;
-    color: black;
+    font-family: "Niramit", sans-serif;
+    font-weight: lighter;
+    color: white;
+    background-color: #171717;
+}
+
+.title-container {
+    margin-top: 300px;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-weight: lighter;
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, #FF6B6B, #F9D923, #FF1700, #36AE7C, #187498, #4D96FF, #9ADCFF);   -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    font-family: 'Josefin Slab'; serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 7px;
+    background-image: linear-gradient(to left, #FF6B6B, #F9D923, #FF1700, #36AE7C, #187498, #4D96FF, #9ADCFF);   -webkit-background-clip: text;
+    color: transparent;
+    
 }
