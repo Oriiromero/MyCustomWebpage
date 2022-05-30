@@ -14,7 +14,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #171717;
+    background-color: #151515;
     font-family: 'Niramit', sans-serif;
 }
 
@@ -52,6 +52,52 @@ a:hover {
     color: #D8E9A8;
     transition: 0.8s;
 }
+
+
+.burguer{
+    display: none;
+}
+
+
+.burguer div{
+width: 25px;
+height: 3px;
+background-color: rgb(224, 224, 224);
+margin: 5px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: #151515;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translate(100%);
+   }
+   .nav-li{
+       opacity: 0;
+   }
+   .burguer{
+       display: block;
+   }
+}
+
 
 .title-container {
     margin-top: 300px;
