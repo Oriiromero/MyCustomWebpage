@@ -36,6 +36,7 @@ nav{
     padding-left: 50px;
     float: left;
     display: flex;
+    cursor: pointer;
 }
 
 
