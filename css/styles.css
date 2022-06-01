@@ -13,31 +13,25 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
-}
-
-.container{
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-    height: 100vh;
 }
 
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 8vh;
-    background-color: #151515;
+    background: rgba(0,0,0,0.6);
     font-family: 'Niramit', sans-serif;
 }
 
 
 .logo{
-    color: rgb(224, 224, 224);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    width: 50px;
+    height: 45px;
+    padding-left: 50px;
+    float: left;
+    display: flex;
 }
 
 
@@ -98,7 +92,7 @@ transition: all 0.3s ease;
        right: 0px;
        height: 92vh;
        top: 8vh;
-       background-color: #151515;
+       background: rgba(0,0,0,0.6);
        display: flex;
        flex-direction: column;
        align-items: center;
