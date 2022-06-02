@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+    font-family: "Niramit", sans-serif;
+    font-weight: lighter;
+    color: white;
+    background-color: #171717;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background: rgba(0,0,0,0.6);
+    font-family: 'Niramit', sans-serif;
+}
+
+
+.logo{
+    width: 50px;
+    height: 45px;
+    padding-left: 50px;
+    float: left;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+
+.nav-links a{
+    color: #a0a0a0;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+.nav-links li{
+    list-style: none;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #FF6B6B;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+a:hover:after {
+   width: 100%;
+   
+}
+
+
+.burguer{
+    display: none;
+}
+
+
+.burguer div{
+width: 25px;
+height: 3px;
+background-color: rgb(224, 224, 224);
+margin: 5px;
+transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background: rgba(0,0,0,0.6);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+   .nav-links li{
+        opacity: 0;
+   }
+   .burguer{
+       display: block;
+       cursor: pointer;
+   }
+}
+
+
+.nav-active{
+    transform: translate(0%);
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    } 
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.title-container {
+    margin-top: 300px;
+}
+
+
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    background-color: #171717;
+    background-image: linear-gradient(120deg, #FF8FE5 0.2%, #FF06B7 10%, #FF6B6B 20%, #FF1700 30%, #F9D923 40%, #36AE7C 50%, #00EAD3 60%, #9ADCFF 70%, #4D96FF 80%, #23049D 90%, #890596 100%);   
+    color: transparent;
+    text-align: center;
+    filter: blur(.2px);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1:hover {
+    animation: rainbow 5s forwards;
+}
+
+h2:hover{
+    animation: rainbow 5s backwards;
+}
+
+@keyframes rainbow {
+    0%{
+        background-size: 650%;
+    }
+    40%{
+        background-size: 650% ;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow {
+    0%{
+        background-size: 100%;
+    }
+    80%{
+        background-size: 1000%;
+    }
+    100%{
+        background-size: 1000%;
+    }
+}
+
+h2 {
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 7px;
+    background-image: linear-gradient(120deg, #FF8FE5 0.2%, #FF06B7 10%, #FF6B6B 20%, #FF1700 30%, #F9D923 40%, #36AE7C 50%, #00EAD3 60%, #9ADCFF 70%, #4D96FF 80%, #23049D 90%, #890596 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    
+}
