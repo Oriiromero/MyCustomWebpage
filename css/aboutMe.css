@@ -8,7 +8,9 @@ h3{
     text-align:center;  
     font-family: 'Josefin Slab', serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
+    letter-spacing: 7px;
+    color: #DDDDDD;
 }
 
 .me {  
@@ -100,4 +102,9 @@ h3{
         font-weight: bold;
         font-size: 15px;
     }
+}
+
+.mini-title{
+    font-size: 20px;
+    color: #DDDDDD;
 }
