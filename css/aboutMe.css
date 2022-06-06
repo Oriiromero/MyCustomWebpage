@@ -1,5 +1,5 @@
 .one {
-    margin-top: 100px; 
+    margin-top: 50px; 
     margin-bottom: 300px;   
     display: inline-flex;
    
@@ -8,6 +8,9 @@
 
 h3{
     text-align:center;  
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .me {  
@@ -23,7 +26,6 @@ h3{
 
 .photo {
     width: 25%;
-    background-color: beige;
     margin-left: 10px;
     margin-right: 10px; 
     transition: 1.5s;
