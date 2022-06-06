@@ -19,13 +19,13 @@ html{
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 
 .title-container {
     margin-top: 300px; 
-    margin-bottom: 300px;   
+    margin-bottom: 200px;   
 }
 
 
@@ -41,7 +41,7 @@ nav{
 
 
 .logo{
-    width: 50px;
+    width: 300px;
     height: 45px;
     padding-left: 50px;
     float: left;
@@ -228,5 +228,11 @@ h2 {
     background-image: linear-gradient(120deg, #FF8FE5 0.2%, #FF06B7 10%, #FF6B6B 20%, #FF1700 30%, #F9D923 40%, #36AE7C 50%, #00EAD3 60%, #9ADCFF 70%, #4D96FF 80%, #23049D 90%, #890596 100%);
     -webkit-background-clip: text;
     color: transparent;
-    text-align: center;  
+    text-align: center;
+  
+}
+
+::-webkit-scrollbar{
+    background-color: #202324;
+    color: #aba499;
 }

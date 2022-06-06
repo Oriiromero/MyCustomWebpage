@@ -1,0 +1,71 @@
+.one {
+    margin-top: 100px; 
+    margin-bottom: 300px;   
+    display: inline-flex;
+   
+}
+
+
+h3{
+    text-align:center;  
+}
+
+.me {  
+    max-width: 100%;  
+    height: auto;  
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    width: 97%; 
+    padding-left: 2%;
+    border-radius: 15%;
+}  
+
+
+.photo {
+    width: 25%;
+    background-color: beige;
+    margin-left: 10px;
+    margin-right: 10px; 
+    transition: 1.5s;
+}
+
+.backstory{
+    background:Green;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px; 
+    transition: 1.5s;
+}
+
+.motivation{
+    background:blue;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px; 
+    transition: 1.5s;
+}
+
+.goals{
+    background: pink;
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px; 
+    transition: 1.5s;
+}
+
+
+.motivation:hover{
+    transform:scale(1.1);
+}
+
+.goals:hover{
+    transform:scale(1.1);
+}
+
+.photo:hover{
+    transform:scale(1.1);
+}
+
+.backstory:hover{
+    transform:scale(1.1);
+}
