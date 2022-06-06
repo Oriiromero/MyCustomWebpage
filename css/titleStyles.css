@@ -6,10 +6,11 @@ body {
     background-color: #171717;
     padding: 0px;
     box-sizing: border-box;
+    cursor:url('../cursors/cursor.png'), auto;
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
 .container{
@@ -46,7 +47,7 @@ nav{
     padding-left: 50px;
     float: left;
     display: flex;
-    cursor: pointer;
+    cursor:url('../cursors/click.png'), auto;
 }
 
 
@@ -66,6 +67,7 @@ nav{
     font-size: 14px;
     padding: 0 10px;
     position: relative;
+    cursor:url('../cursors/click.png'), auto;
 }
 
 
@@ -86,6 +88,7 @@ a:after{
 
 a:hover:after {
    width: 100%;
+   cursor:url('../cursors/click.png'), auto;
    
 }
 
@@ -171,7 +174,7 @@ transition: all 0.3s ease;
 h1 {
     font-family: 'Sacramento', cursive;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 0px;
     margin-bottom: 0px;
     cursor: pointer;
@@ -189,10 +192,12 @@ h1 {
 
 h1:hover {
     animation: rainbow 5s forwards;
+    cursor:url('../cursors/click.png'), auto;
 }
 
 h2:hover{
     animation: rainbow 5s backwards;
+    cursor:url('../cursors/click.png'), auto;
 }
 
 @keyframes rainbow {
