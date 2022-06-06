@@ -2,7 +2,7 @@ body {
     margin: 0px;
     font-family: "Niramit", sans-serif;
     font-weight: lighter;
-    color: white;
+    color: #a0a0a0;
     background-color: #171717;
     padding: 0px;
     box-sizing: border-box;
@@ -12,12 +12,22 @@ html{
     scroll-behavior: smooth;
 }
 
-section{
+.container{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 200px;
 }
+
+
+.title-container {
+    margin-top: 300px; 
+    margin-bottom: 300px;   
+}
+
 
 
 nav{
@@ -44,6 +54,7 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 40%;
+    margin-top: 0;
 }
 
 
@@ -157,12 +168,6 @@ transition: all 0.3s ease;
 }
 
 
-.title-container {
-    margin-top: 300px;
-}
-
-
-
 h1 {
     font-family: 'Sacramento', cursive;
     font-weight: bold;
@@ -179,6 +184,7 @@ h1 {
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 h1:hover {
@@ -222,6 +228,5 @@ h2 {
     background-image: linear-gradient(120deg, #FF8FE5 0.2%, #FF06B7 10%, #FF6B6B 20%, #FF1700 30%, #F9D923 40%, #36AE7C 50%, #00EAD3 60%, #9ADCFF 70%, #4D96FF 80%, #23049D 90%, #890596 100%);
     -webkit-background-clip: text;
     color: transparent;
-    text-align: center;
-    
+    text-align: center;  
 }
