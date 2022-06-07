@@ -108,3 +108,42 @@ h3{
     font-size: 20px;
     color: #DDDDDD;
 }
+
+
+
+/* EXPERIENCE DIV */
+
+.two {
+   display: flex;
+}
+
+.farmalink {
+    width: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.securitas {
+    width: 50%;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h4{
+    text-align:center;  
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 7px;
+    color: #DDDDDD;
+    margin-right: 50%;
+    margin-left: 50%;
+}
+
+.mini-title2{
+    font-size: 20px;
+    color: #DDDDDD;
+    text-align: center;
+}
+
