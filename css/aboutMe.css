@@ -179,22 +179,90 @@ h4{
 
 
 /* STUDIES DIV */
-/*
-.slider {
-    width: 300px;
-    text-align: center;
-    overflow: hidden;
+.container1 {
+    width: 60%;
+    height: 60%;
+    margin: 200px auto;
+  }
+
+  h5{
+    text-align:center;  
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 7px;
+    background-image: linear-gradient(120deg, #990000 0.2%, #FF5B00 10%, #F77E21 20%, #FAC213 30%, #FEF9A7 40%, #FFEE63 50%, #D4D925 60%, #D9CE3F 70%, #EFD345 80%, #BABD42 90%, #82954B 100%);   
+    color: transparent;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 60px;
+    margin-top: 0;
 }
-
-.three {
+  
+  .carousel {
+    /*border: 2px solid #ccc;*/
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    height: 100%;
     display: flex;
-
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-
-    scroll-behavior: smooth
-    -webkit-overflow-scrolling: touch;
-
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-}*/
+    width: 400%;
+    transition: all 0.5s ease;
+  }
+  
+  .slider section {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+  }
+  
+  .controls .arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+  
+  .arrow.left {
+    left: 5px;
+  }
+  
+  .arrow.right {
+    right: 5px;
+  }
+  
+  .controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .controls ul li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    margin: 10px;
+    background: #333;
+    cursor: pointer;
+  }
+  
+  .controls ul li.selected {
+    background: transparent;
+  }
