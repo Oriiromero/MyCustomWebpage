@@ -249,7 +249,7 @@ section p {
   
   .controls ul {
     position: absolute;
-    bottom: 3px;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%);
     list-style: none;
