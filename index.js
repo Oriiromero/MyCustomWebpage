@@ -1,3 +1,5 @@
+// NAVBAR SLIDE//
+
 const navSlide = function()
 {
     const burguer = document.querySelector(".burguer");
@@ -29,3 +31,6 @@ const navSlide = function()
 }
 
 navSlide();
+
+//SLIDER OF STUDIES SECTION//
+
