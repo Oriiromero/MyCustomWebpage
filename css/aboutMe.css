@@ -271,3 +271,69 @@ section p {
   .controls ul li.selected {
     background: transparent;
   }
+
+
+  /*SKILLS BAR*/
+    h6{
+    text-align:center;  
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 7px;
+    background-image: linear-gradient(120deg, #6867AC 0.2%, #A267AC 10%, #CE7BB0 20%, #FFBCD1 30%, #B983FF 40%, #94B3FD 50%, #94DAFF 60%, #99FEFF 70%, #CDF0EA 80%, #A6D6D6 90%, #99BBAD 100%);   
+    color: transparent;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 25px;
+  }
+
+  #skills-section{
+      display: flex;
+      flex-direction: row;
+      margin-top: 110px;
+      margin-bottom: 5px;
+  }
+  
+  .container3{
+    width: 35%;
+    margin: 10px auto;
+    margin-bottom: 200px;
+    margin-right: 20px;
+  }
+
+  .container4{
+    width: 35%;
+    margin: 10px auto;
+    margin-bottom: 200px;
+    margin-left: 20px;
+  }
+  
+  .progress{
+    width: 100%;
+    height: 18px;
+    background-color: #06283D;
+    border-radius: 10px;
+  }
+  
+  .progress .progress-bar{
+    width: 0%;
+    opacity: 0;
+    height: 100%;
+    background-color: #CAB8FF;
+    border-radius: 10px;
+    position: relative;
+    transition: all .5s;
+  }
+  
+  .progress-bar span{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+  }
+  
+  p{
+    margin-top: 20px;
+  }
