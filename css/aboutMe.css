@@ -179,6 +179,11 @@ h4{
 
 
 /* STUDIES DIV */
+
+section p {
+    font-size: 20px;
+}
+
 .container1 {
     width: 60%;
     height: 60%;
@@ -231,7 +236,7 @@ h4{
   .controls .arrow {
     position: absolute;
     top: 50%;
-    cursor: pointer;
+    cursor:url('../cursors/click.png'), auto;
   }
   
   .arrow.left {
@@ -244,7 +249,7 @@ h4{
   
   .controls ul {
     position: absolute;
-    bottom: 20px;
+    bottom: 3px;
     left: 50%;
     transform: translate(-50%);
     list-style: none;
@@ -254,8 +259,8 @@ h4{
   }
   
   .controls ul li {
-    width: 14px;
-    height: 14px;
+    width: 11px;
+    height: 11px;
     border: 1px solid #333;
     border-radius: 50px;
     margin: 10px;
