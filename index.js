@@ -99,3 +99,5 @@ window.addEventListener("scroll", () => {
     hideProgress();
   }
 });
+
+//CONTACT FORM//
