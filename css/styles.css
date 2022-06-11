@@ -435,7 +435,7 @@ h3 {
 .telemarket {
   position: relative;
   align-items: center;
-  width: 100%;
+  width: 50%;
   margin-left: 33%;
   margin-top: 30px;
   transition: 1.5s;
@@ -444,7 +444,7 @@ h3 {
 .alarm{
   position: relative;
   align-content: center;
-  width: 100%;
+  width: 50%;
   margin-bottom: 0px;
   margin-left: 33%;
   transition: 1.5s;
@@ -517,12 +517,12 @@ h4{
 }
   
 .arrow.left {
-  left: 240px;
+  left: 10px;
 }
   
 .arrow.right {
-  right: 5px;
-  left: 1200px;
+  right: 10px;
+  left: 96%px;
 }
   
 .controls ul {
