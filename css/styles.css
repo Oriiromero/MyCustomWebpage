@@ -606,15 +606,15 @@ background: transparent;
 
 .container5 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 .contact-info:{
-  width: 50%;
   content: justify;
   align-items: center;
-
+  width: 20%;
+  margin-right: 150px;
 }
 
 .social{
@@ -622,7 +622,8 @@ background: transparent;
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin-left: 20px;
+  margin-right 20px
 }
 
 .social a{
@@ -644,7 +645,13 @@ background: transparent;
   color: #fff;
   box-shadow: 0 0 1.5rem rgba(93, 177, 183, 0.578);
   border-radius: 10px;
+  width: 40%;
 }
+
+form {
+  width: 90%;
+}
+
 
 input[type=text] {
   width: 100%;
@@ -653,6 +660,7 @@ input[type=text] {
   background-color: #181a1b;
   border-radius: 10px;
   color: #fff;
+  font-family: "Niramit", sans-serif;
 }
 
 input[type=email] {
@@ -661,7 +669,7 @@ input[type=email] {
   border: none;
   background-color: #181a1b;
   border-radius: 10px;
- 
+  font-family: "Niramit", sans-serif;
 }
 
 button {
@@ -689,19 +697,20 @@ textarea {
 }
 
 input[type=text]:focus {
-  border: 3px solid #555;
+  outline: 2px solid #3BACB6;
   transition: 0.3s ease-in;
 }
 
 input[type=email]:focus {
-  border: 3px solid #555;
+  outline: 2px solid #3BACB6;
   transition: 0.3s ease;
 }
 
 textarea:focus {
-  border: 3px solid #555;
+  outline: 2px solid #3BACB6;
   transition: 0.3s ease;
 }
+
 
 button:hover {
   background-color: #DBDFFD;
