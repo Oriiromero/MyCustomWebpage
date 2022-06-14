@@ -267,9 +267,10 @@ h2 {
 .title-two {
   display: flex;
   position: relative;
-  margin-left: 45%;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  justify-content: center;
 }
 
 .container1{
@@ -396,15 +397,6 @@ h3 {
   position: relative;
 }
 
-.container2 h3{
-  background-image: linear-gradient(120deg, #6867AC 0.2%, #A267AC 10%, #CE7BB0 20%, #FFBCD1 30%, #B983FF 40%, #94B3FD 50%, #94DAFF 60%, #99FEFF 70%, #CDF0EA 80%, #A6D6D6 90%, #99BBAD 100%);   
-  color: transparent;
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 
 .farmalink {
     display: flex;
@@ -462,8 +454,6 @@ h4{
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-right: 50%;
-    margin-left: 50%;
 }
 
 .alarm:hover{
@@ -604,10 +594,33 @@ background: transparent;
 
 /* CONTACT SECTION */
 
+h5 {
+  background-image: linear-gradient(120deg, #68A7AD 0.2%, #99C4C8 10%, #CCF3EE 20%, #DAE5D0 30%, #A0BCC2 40%, #EEE4AB 50%, #E5CB9F 60%, #F8ECD1 70%, #DEB6AB 80%, #AC7D88 90%, #85586F 100%);   
+  color: transparent;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align:center;  
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 7px;
+}
+
 .container5 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 10%;
+  text-align: justify;
 }
 
 .contact-info:{
@@ -623,7 +636,9 @@ background: transparent;
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
-  margin-right 20px
+  margin-right 20px;
+  align-items: center;
+  padding: 10%;
 }
 
 .social a{
