@@ -101,3 +101,19 @@ window.addEventListener("scroll", () => {
 });
 
 //CONTACT FORM//
+// var i= 0,text;
+// var text = document.getElementById("contactText").innerHTML;
+
+
+
+// function typeAnimation ()
+// {
+//   if(i<text.length)
+//   {
+//     document.getElementById("contactText").innerHTML += text.charAt(i);
+//     i++;
+//     setTimeout(typeAnimation,50);
+//   }
+// };
+
+// typeAnimation();
