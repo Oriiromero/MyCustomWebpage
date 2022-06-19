@@ -100,20 +100,33 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//CONTACT FORM//
-// var i= 0,text;
-// var text = document.getElementById("contactText").innerHTML;
+//APPEAR TEXT ANIMATION//
+function textAppearAnimation (timeBetweenLetters, id)
+{
+  var i= 0;
+  var text = document.getElementById(id).innerHTML;
+
+  document.getElementById(id).innerHTML = '';
+
+  typeAnimation();
+
+  function typeAnimation ()
+  {
+    if(i<text.length)
+    {
+      document.getElementById(id).innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeAnimation,timeBetweenLetters);
+    }
+  };
+}
+
+textAppearAnimation(150, "subText");
 
 
-
-// function typeAnimation ()
-// {
-//   if(i<text.length)
-//   {
-//     document.getElementById("contactText").innerHTML += text.charAt(i);
-//     i++;
-//     setTimeout(typeAnimation,50);
-//   }
-// };
-
-// typeAnimation();
+// SCROLL BEHAVIOUR // 
+window.addEventListener("scroll", () => {
+  const scrolled = window.scrollY;
+ 
+  console.log(scrolled);
+});
