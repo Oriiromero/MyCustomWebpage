@@ -1,3 +1,24 @@
+//NAVBAR HIDE FUNCTION//
+let navbar = document.querySelector("nav");
+let previousScroll = window.pageYOffset;
+
+window.onscroll = function(){
+  let currentScroll = window.pageYOffset;
+  if(previousScroll > currentScroll)
+  {
+    navbar.style.top = "0px";
+  }
+  else
+  {
+    navbar.style.top = "-90px";
+  }
+
+  previousScroll = currentScroll;
+
+}
+
+
+
 // NAVBAR SLIDE//
 
 const navSlide = function()

@@ -36,7 +36,7 @@ html {
   background-color: #454a4d;
 }
 
-/* BIG TITLE SECTION & NAVBAR*/
+/* BIG TITLE SECTION */
 
 .title-container {
   display: flex;
@@ -59,35 +59,46 @@ html {
   position: relative;
 }
 
+/* NAVBAR */
+
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
   background: rgba(0,0,0,0.6);
   font-family: 'Niramit', sans-serif;
+  z-index: 1;
+  transition: top 0.3s;
 }
 
 
 .logo {
-  width: 300px;
-  height: 45px;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
   padding-left: 50px;
-  float: left;
-  display: flex;
   cursor:url('../cursors/click.png'), auto;
 }
 
 
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
+nav ul {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 0;
   margin-top: 0;
+  display: flex;
+  line-height: 80px;
+  margin-right: 50px;
 }
 
+nav ul li {
+  margin: 0 5px;
+}
 
-.nav-links a {
+nav ul li a {
   color: #a0a0a0;
   text-decoration: none;
   letter-spacing: 3px;
@@ -99,11 +110,9 @@ nav {
 }
 
 
-.nav-links li {
-  list-style: none;
-}
 
-a:after {
+
+nav ul li a:after {
   content: "";
   position: absolute;
   background-color: #FF6B6B;
@@ -114,7 +123,7 @@ a:after {
   transition: 0.5s;
 }
 
-a:hover:after {
+nav ul li a:hover:after {
  width: 100%;
  cursor:url('../cursors/click.png'), auto;
  
@@ -684,6 +693,7 @@ input[type=email] {
   padding: 3px;
   border: none;
   background-color: #181a1b;
+  color: #fff;
   border-radius: 10px;
   font-family: "Niramit", sans-serif;
 }
