@@ -1,4 +1,5 @@
 //NAVBAR HIDE FUNCTION//
+
 let navbar = document.querySelector("nav");
 let previousScroll = window.pageYOffset;
 
@@ -17,38 +18,35 @@ window.onscroll = function(){
 
 }
 
-
-
-// NAVBAR SLIDE//
+//NAVBAR SLIDE//
 
 const navSlide = function()
 {
-    const burguer = document.querySelector(".burguer");
-    const nav = document.querySelector(".nav-links");
-    const navLinks = document.querySelectorAll(".nav-links li");
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-list');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-    burguer.addEventListener("click", function()
-        {
-            //Toggle Nav
-            nav.classList.toggle("nav-active");
+  burger.addEventListener('click', function()
+  {
+    //Toggle nav
+    nav.classList.toggle('nav-active');
 
+    //Animate links
+    navLinks.forEach((link, index) => {
+      if(link.style.animation)
+      {
+        link.style.animation = '';
+      }
+      else
+      {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
+      }
+    });
 
-            //Animate Links
-            navLinks.forEach((link, index) => {
-                if (link.style.animation) 
-                {
-                    link.style.animation = '';
-                }
-                else
-                 {
-                     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                 }
-            });
+    //Burger animation
+    burger.classList.toggle('toggle');
 
-            //Burguer animation
-            burguer.classList.toggle("toggle");
-
-        });
+  });
 }
 
 navSlide();
