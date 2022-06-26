@@ -168,6 +168,7 @@ nav ul li a:hover:after {
   background-color: rgba(224, 224, 224);
   margin: 3.5px;
   padding: 0;
+  border-radius: 10px;
   cursor:url('../cursors/cursor.png'), auto;
   transition: all 0.3 ease;
 }
@@ -195,8 +196,9 @@ nav ul li a:hover:after {
     opacity: 0;
   }
 
-  .burger div {
+  .burger div{
     cursor: url('../cursors/click.png'), auto;
+    border-radius: 10px;
   }
 
   .burger {
@@ -236,7 +238,7 @@ nav ul li a:hover:after {
 
 .toggle .line2 {
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .toggle .line3 {
