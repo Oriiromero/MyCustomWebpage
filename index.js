@@ -42,10 +42,22 @@ const navSlide = function()
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
       }
     });
-
+    
     //Burger animation
     burger.classList.toggle('toggle');
 
+  });
+  
+  navLinks.forEach((link, index) => {
+    link.addEventListener('click', function()
+    {
+      //Toggle nav
+      nav.classList.toggle('nav-active');
+  
+      //Burger animation
+      burger.classList.toggle('toggle');
+  
+    });
   });
 }
 

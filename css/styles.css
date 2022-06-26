@@ -44,7 +44,7 @@ html {
   align-items: center;
   width: 100%; 
   height: 100%; 
-  padding-top: 17%;
+  padding-top: 18%;
   position: relative;
 }
 
@@ -73,12 +73,18 @@ nav {
 }
 
 .logo {
-  width: 100px;
- height: 100px;
+ display: inline-flex;
+ position: absolute;
+ width: 60px;
  margin-top: 10px;
- padding-left: 50px;
+ padding-left: 20px; 
  cursor:url('../cursors/click.png'), auto;
 
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
 }
 
 .logo a {
@@ -86,6 +92,7 @@ nav {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
+  cursor:url('../cursors/click.png'), auto;
 }
 
 nav ul {
@@ -143,23 +150,26 @@ nav ul li a:hover:after {
 
 .burger {
   cursor: auto;
-  display: flex;
-  position: relative;
+  display:inline-flex;
+  position: absolute;
   bottom: 20px;
   flex-direction: column;
   padding: 0;
-  align-items: flex-end;
+  right: 0; 
+  margin: 6px 8px;
   margin-right: 15px;
-  opacity: 0;
+  opacity: 0; 
+  cursor:url('../cursors/cursor.png'), auto;
 }
 
 .burger div {
   width: 25px;
   height: 3px;
   background-color: rgba(224, 224, 224);
-  margin: 3px;
+  margin: 3.5px;
   padding: 0;
-  /*transition: all 0.3 ease;*/
+  cursor:url('../cursors/cursor.png'), auto;
+  transition: all 0.3 ease;
 }
 
 @media screen and (max-width: 768px){
@@ -185,8 +195,11 @@ nav ul li a:hover:after {
     opacity: 0;
   }
 
-  .burger {
+  .burger div {
     cursor: url('../cursors/click.png'), auto;
+  }
+
+  .burger {
     display: flex;
     position: absolute;
     right: 0;
@@ -217,7 +230,7 @@ nav ul li a:hover:after {
 }
 
 .toggle .line1 {
-  transform: rotate(-46deg) translate(-6px,6px);
+  transform: rotate(-45deg) translate(-8px,6px);
   transition: 0.3s;
 }
 
@@ -227,9 +240,11 @@ nav ul li a:hover:after {
 }
 
 .toggle .line3 {
-  transform: rotate(46deg) translate(-6px,-6px);
+  transform: rotate(45deg) translate(-8px,-6px);
   transition: 0.3s;
 }
+
+/*  TITLES   */
 
 h1 {
   font-family: 'Sacramento', cursive;
