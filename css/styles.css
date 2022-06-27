@@ -173,7 +173,7 @@ nav ul li a:hover:after {
   transition: all 0.3 ease;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 780px){
   body{
     overflow-x: hidden;
   }
@@ -439,6 +439,14 @@ h3 {
     color: #DDDDDD;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
 
 /* EXPERIENCE SECTION */
 
