@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Oriana Romero | Web Developer</title>
 
         
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/responsive.css">
 
         <!--Sacramento-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,50 +29,51 @@
 
   <body>
       <!--FIRST PAGE-->
-       <section id="page">
+       <section id="page1">
           <nav>
             <div class="logo">
-                <img src="images/vision.png" alt="logo face">
+              <a href="#page1"><img src="images/vision.png" alt="logo face"></a>
             </div>
-            <ul class="nav-links">
-                <li>
-                    <a href="#">About me</a>
-                </li>
-                <li>
-                    <a href="#">Experience</a>
-                </li>
-                <li>
-                    <a href="#">Skills</a>
-                </li>
-                <li>
-                    <a href="#">Studies</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <div class="burguer">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+              <ul class="nav-list">
+              <li class="nav-link">
+                <a href="#page2">About</a>
+              </li>
+              <li class="nav-link">
+                <a href="#page3">Experience</a>
+              </li>
+              <li class="nav-link">
+                <a href="#page4">Studies</a>
+              </li>
+              <li class="nav-link">
+                <a href="#page5">Skills</a>
+              </li>
+              <li class="nav-link">
+                <a href="#page6">Contact</a>
+              </li>
+          </ul>
+      
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
          </nav>
 
           <div class="title-container">
               <h1> Hello. I'm Oriana.</h1>
           <div class="subtitle-container">
-              <h2>A web developer</h2>
+              <h2 id="subText">A web developer</h2>
           </div>
           </div>
         </section>
 
       <!--SECOND PAGE-->
-        <section id="page">
+        <section id="page2">
           <div class="title-two">
               <h3>About me</h3>
           </div>
           <div class="container1">
-                  <div class="backstory">
+                  <div class="backstory fade-in">
                     <p class="mini-title">
                       <strong>
                         A little backstory...
@@ -81,10 +84,10 @@
                         In my to do list I'll put learning german, but that's a story for another day!
                     </p>
                   </div>
-                  <div class="photo">
+                  <div class="photo fade-in">
                       <img class="me" src="images/me.jpg">
                   </div>
-                  <div class="motivation">
+                  <div class="motivation fade-in">
                       <p class="mini-title">
                           <strong>
                               What motivates me?
@@ -99,49 +102,53 @@
         </section>
 
       <!--THIRD PAGE-->
-        <section id="page">
+        <section id="page3">
           <div class="title-two">
             <h4>Experience</h4>
           </div>
           <div class="container2">
             <div class="farmalink">
-              <p class="mini-title2">
-                <strong>
-                  Farmalink, Argentina | 2019-2021
-                </strong>
-              </p>
-              <p>
-                I worked for almost three years as a customer client assistant in a small company in Argentina.<br>
-                As my first job ever, I learned not only how to do it right but also about responsability and consistance.<br>
-                I'll always be grateful for the things they gave me and will forever remember it with joy.
-              </p>
-              <div class="telemarket">
+              <div class="description fade-in">
+                <p class="mini-title2">
+                  <strong>
+                    Farmalink, Argentina | 2019-2021
+                  </strong>
+                </p>
+                <p>
+                  I worked for almost three years as a customer client assistant in a small company in Argentina.<br>
+                  As my first job ever, I learned not only how to do it right but also about responsability and consistance.<br>
+                  I'll always be grateful for the things they gave me and will forever remember it with joy.
+                </p>
+              </div>
+              <div class="telemarket fade-in">
                 <img src="images/customer-service.png">
               </div>
             </div>
                    
-            <div class="securitas">
+            <div class="securitas fade-in">
               <div class="alarm">
                 <img src="images/alarm-system.png">
               </div> 
-              <p class="mini-title2">
-                <strong>
-                  Securitas Direct, Spain | 2021-2022
-                </strong>
-              </p>
-              <p class>
-                As my second job, It has been a great professional but also personal challenge since I was in a new country 
-                with people very different from me.<br>
-                It has taught me so much about problem solving, staying calm and working under pressure.<br>
-                But most importantly, it has taught me to feel comfortable moving forward from a challenging situation 
-                without letting it drag me down.
-              </p> 
+              <div class="description fade-in">
+                <p class="mini-title2">
+                  <strong>
+                    Securitas Direct, Spain | 2021-2022
+                  </strong>
+                </p>
+                <p class>
+                  As my second job, It has been a great professional but also personal challenge since I was in a new country 
+                  with people very different from me.<br>
+                  It has taught me so much about problem solving, staying calm and working under pressure.<br>
+                  But most importantly, it has taught me to feel comfortable moving forward from a challenging situation 
+                  without letting it drag me down.
+                </p> 
+              </div>
             </div>
           </div>
         </section>
 
       <!--FOURTH PAGE-->
-        <section id="page">
+        <section id="page4">
           <div class="title-two">
             <h3>Studies</h3>
           </div>
@@ -216,7 +223,7 @@
 
 
     <!--FIFTH PAGE-->
-        <section id="page">
+        <section id="page5">
           <div class="title-two">
             <h4>Skills</h4>
           </div>
@@ -284,7 +291,7 @@
             
 
     <!--SIXTH PAGE-->
-    <section id="page">
+    <section id="page6">
       <div class="title-two">
         <h5>Contact me</h5>
       </div>
@@ -292,7 +299,7 @@
         <div class="contact-info">
           <div class="info-text">
           <p class="mini-title"><strong>Get in touch!</strong></p>
-          <p>If you want to get in touch with me send me<br>a message and I'll answer you as soon as posible!</p>
+          <p>If you want to get in touch with me send me a message and I'll answer you as soon as posible!</p>
           </div>
           <div class="social">
             <a href="https://github.com/Oriiromero/MyCustomWebpage"><img src="images/github.png"></a>

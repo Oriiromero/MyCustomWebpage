@@ -1,33 +1,75 @@
-// NAVBAR SLIDE//
+//NAVBAR HIDE FUNCTION//
+
+let navbar = document.querySelector("nav");
+let previousScroll = window.pageYOffset;
+
+window.onscroll = function(){
+  let currentScroll = window.pageYOffset;
+  if(previousScroll > currentScroll)
+  {
+    navbar.style.top = "0px";
+  }
+  else
+  {
+    navbar.style.top = "-90px";
+  }
+
+  previousScroll = currentScroll;
+
+}
+
+//NAVBAR SLIDE//
 
 const navSlide = function()
 {
-    const burguer = document.querySelector(".burguer");
-    const nav = document.querySelector(".nav-links");
-    const navLinks = document.querySelectorAll(".nav-links li");
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-list');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-    burguer.addEventListener("click", function()
+  burger.addEventListener('click', function()
+  {
+    //Toggle nav
+    nav.classList.toggle('nav-active');
+
+    //Animate links
+    navLinks.forEach((link, index) => {
+      if(link.style.animation)
+      {
+        link.style.animation = '';
+      }
+      else
+      {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
+      }
+    });
+    
+    //Burger animation
+    burger.classList.toggle('toggle');
+
+  });
+  
+  navLinks.forEach((link, index) => {
+    link.addEventListener('click', function()
+    {
+      //Toggle nav
+      nav.classList.toggle('nav-active');
+  
+      //Burger animation
+      burger.classList.toggle('toggle');
+
+      navLinks.forEach((link, index) => {
+        if(link.style.animation)
         {
-            //Toggle Nav
-            nav.classList.toggle("nav-active");
-
-
-            //Animate Links
-            navLinks.forEach((link, index) => {
-                if (link.style.animation) 
-                {
-                    link.style.animation = '';
-                }
-                else
-                 {
-                     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-                 }
-            });
-
-            //Burguer animation
-            burguer.classList.toggle("toggle");
-
-        });
+          link.style.animation = '';
+        }
+        else
+        {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
+        }
+      });
+  
+    });
+  });
 }
 
 navSlide();
@@ -100,20 +142,66 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//CONTACT FORM//
-// var i= 0,text;
-// var text = document.getElementById("contactText").innerHTML;
+//APPEAR TEXT ANIMATION//
+function textAppearAnimation (timeBetweenLetters, id)
+{
+  var i= 0;
+  var text = document.getElementById(id).innerHTML;
+
+  document.getElementById(id).innerHTML = '';
+
+  typeAnimation();
+
+  function typeAnimation ()
+  {
+    if(i<text.length)
+    {
+      document.getElementById(id).innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeAnimation,timeBetweenLetters);
+    }
+  };
+}
+
+textAppearAnimation(150, "subText");
 
 
+// SCROLL BEHAVIOUR // 
+window.addEventListener("scroll", () => {
+  const scrolled = window.scrollY;
+ 
+  console.log(scrolled);
+});
 
-// function typeAnimation ()
-// {
-//   if(i<text.length)
-//   {
-//     document.getElementById("contactText").innerHTML += text.charAt(i);
-//     i++;
-//     setTimeout(typeAnimation,50);
-//   }
-// };
+//FADE IN AND SLIDE ON SCREEN//
 
-// typeAnimation();
+const faders = document.querySelectorAll(".fade-in");
+
+const appearOptions = {
+  threshold: 1,
+  rootMargin: "0px 0px 300px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll)
+{
+  entries.forEach(entry => {
+    if(!entry.isIntersecting)
+    {
+      return;
+    }
+    else
+    {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+ appearOptions);
+
+ faders.forEach(fader =>
+  {
+    appearOnScroll.observe(fader);
+  });
+
+
+  
