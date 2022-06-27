@@ -531,7 +531,13 @@ h4{
 /* STUDIES DIV */
 
 .cards p {
+  text-align: center;
   font-size: 20px;
+}
+
+.cards {
+  justify-content: center;
+  align-items: center;
 }
   
 .carousel {
@@ -602,6 +608,7 @@ h4{
 .controls ul li.selected {
 background: transparent;
 }
+
 
 
   /*SKILLS BAR*/
@@ -683,7 +690,7 @@ h5 {
   width: 100%;
   align-items: center;
   padding: 10%;
-  text-align: justify;
+  text-align: center;
 }
 
 .contact-info {
