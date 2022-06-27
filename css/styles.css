@@ -393,15 +393,18 @@ h3 {
 
 .motivation:hover{
     transform:scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 
 
 .photo:hover{
     transform:scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 
 .backstory:hover{
     transform:scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 760px) {
